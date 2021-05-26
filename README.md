@@ -1,8 +1,8 @@
 [![Community Plus header](https://github.com/newrelic/opensource-website/raw/master/src/images/categories/Community_Plus.png)](https://opensource.newrelic.com/oss-category/#community-plus)
 
-# New Relic Go OpenTelemetry exporter [![GoDoc](https://godoc.org/github.com/newrelic/opentelemetry-exporter-go/newrelic?status.svg)](https://godoc.org/github.com/newrelic/opentelemetry-exporter-go/newrelic)
+# New Relic Go OpenTelemetry exporter [![GoDoc](https://godoc.org/github.com/nicksherron/opentelemetry-exporter-go/newrelic?status.svg)](https://godoc.org/github.com/nicksherron/opentelemetry-exporter-go/newrelic)
 
-The `"github.com/newrelic/opentelemetry-exporter-go/newrelic"` package
+The `"github.com/nicksherron/opentelemetry-exporter-go/newrelic"` package
 provides an exporter for sending OpenTelemetry data to New Relic.  Currently,
 traces and the latest metric instruments (as of v0.19 of Open Telemetry for Go) are
 supported.
@@ -48,7 +48,7 @@ Full source of this modified sample application is available in examples/simple/
    ...with this:
 
    ```go
-   "github.com/newrelic/opentelemetry-exporter-go/newrelic"
+   "github.com/nicksherron/opentelemetry-exporter-go/newrelic"
    ```
 
    You'll also need to add some imports, if they're missing:
@@ -123,7 +123,7 @@ Full source of this modified sample application is available in examples/simple/
 You’re now set! If you’re not using go mod, you’ll need to download the exporter using the go get command:
 
 ```
-go get github.com/newrelic/opentelemetry-exporter-go
+go get github.com/nicksherron/opentelemetry-exporter-go
 ```
 
 ### **Running the sample application**

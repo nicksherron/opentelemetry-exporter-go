@@ -10,10 +10,10 @@ github.com/newrelic/newrelic-telemetry-sdk-go v0.5.1 h1:9YEHXplqlVkOltThchh+RxeO
 github.com/newrelic/newrelic-telemetry-sdk-go v0.5.1/go.mod h1:2kY6OeOxrJ+RIQlVjWDc/pZlT3MIf30prs6drzMfJ6E=
 github.com/newrelic/newrelic-telemetry-sdk-go v0.5.2 h1:sAXOgYmWOug9S2pwJAfYejhJiYu2NLMSuLLYXXSmse0=
 github.com/newrelic/newrelic-telemetry-sdk-go v0.5.2/go.mod h1:2kY6OeOxrJ+RIQlVjWDc/pZlT3MIf30prs6drzMfJ6E=
-github.com/newrelic/opentelemetry-exporter-go v0.15.1 h1:uw3L+bT1/BRhJg8Oe18Ax1CuKoovFO5xTZGLa0q1A1c=
-github.com/newrelic/opentelemetry-exporter-go v0.15.1/go.mod h1:ADOkC6dglX4kLIFRkVFlwdUpo7aeK1hCyCIHF1er+3M=
-github.com/newrelic/opentelemetry-exporter-go v0.17.0 h1:Q6Cu09krb5QqS9ONrw4zccvQLDfXo/aa9X6vGYM/QHI=
-github.com/newrelic/opentelemetry-exporter-go v0.17.0/go.mod h1:tIVBsHhmD2HCZalRRHuqsCCIXv7NNnUuBTDHYz6LuCY=
+github.com/nicksherron/opentelemetry-exporter-go v0.15.1 h1:uw3L+bT1/BRhJg8Oe18Ax1CuKoovFO5xTZGLa0q1A1c=
+github.com/nicksherron/opentelemetry-exporter-go v0.15.1/go.mod h1:ADOkC6dglX4kLIFRkVFlwdUpo7aeK1hCyCIHF1er+3M=
+github.com/nicksherron/opentelemetry-exporter-go v0.17.0 h1:Q6Cu09krb5QqS9ONrw4zccvQLDfXo/aa9X6vGYM/QHI=
+github.com/nicksherron/opentelemetry-exporter-go v0.17.0/go.mod h1:tIVBsHhmD2HCZalRRHuqsCCIXv7NNnUuBTDHYz6LuCY=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0 h1:4G4v2dO3VZwixGIRoQ5Lfboy6nUhCyYzaqnIAPPhYs4=
