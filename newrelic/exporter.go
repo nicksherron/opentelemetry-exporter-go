@@ -23,9 +23,8 @@ import (
 	"go.opentelemetry.io/otel/trace"
 
 	"github.com/newrelic/newrelic-telemetry-sdk-go/telemetry"
-	"github.com/newrelic/opentelemetry-exporter-go/newrelic/internal/transform"
+	"github.com/nicksherron/opentelemetry-exporter-go/newrelic/internal/transform"
 	exportmetric "go.opentelemetry.io/otel/sdk/export/metric"
-	exporttrace "go.opentelemetry.io/otel/sdk/export/trace"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 )
 
@@ -41,9 +40,7 @@ type Exporter struct {
 	serviceName string
 }
 
-var (
-	errServiceNameEmpty = errors.New("service name is required")
-)
+var errServiceNameEmpty = errors.New("service name is required")
 
 // NewExporter creates a new Exporter that exports telemetry to New Relic.
 func NewExporter(service, apiKey string, options ...func(*telemetry.Config)) (*Exporter, error) {
@@ -136,7 +133,7 @@ func NewExportPipeline(service string, traceOpt []sdktrace.TracerProviderOption,
 // in the global OpenTelemetry telemetry pipeline. It is the caller's
 // responsibility to stop the returned push Controller.
 // ## Prerequisites
-// For details, check out the "Get Started" section of [New Relic Go OpenTelemetry exporter](https://github.com/newrelic/opentelemetry-exporter-go/blob/master/README.md#get-started).
+// For details, check out the "Get Started" section of [New Relic Go OpenTelemetry exporter](https://github.com/nicksherron/opentelemetry-exporter-go/blob/master/README.md#get-started).
 // ## Environment variables
 // This function uses the following environment variables to configure
 // the exporter installed in the pipeline:
@@ -163,12 +160,12 @@ func InstallNewPipeline(service string) (*controller.Controller, error) {
 }
 
 var (
-	_ exporttrace.SpanExporter = (*Exporter)(nil)
-	_ exportmetric.Exporter    = (*Exporter)(nil)
+	_ sdktrace.SpanExporter = (*Exporter)(nil)
+	_ exportmetric.Exporter = (*Exporter)(nil)
 )
 
 // ExportSpans exports span data to New Relic.
-func (e *Exporter) ExportSpans(ctx context.Context, spans []*exporttrace.SpanSnapshot) error {
+func (e *Exporter) ExportSpans(ctx context.Context, spans []*sdktrace.SpanSnapshot) error {
 	if nil == e {
 		return nil
 	}
